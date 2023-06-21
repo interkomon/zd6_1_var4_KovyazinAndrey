@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract61_Kovyazin.Buttons"
+             StyleClass="carouselpage">
+
+    <CarouselPage.Resources>
+        <StyleSheet Source="/style.css"/>
+    </CarouselPage.Resources>
+
+    <ContentPage>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+        <StackLayout  Orientation="Horizontal">
+            <Button
+                StyleClass="button1" Text="STATIC" Margin="15,20,0,0">  
+            </Button>
+            <Button
+                StyleClass="button2" Text="STATIC" Margin="15,20,0,0">    
+            </Button>
+            <Button
+                StyleClass="button3" Text="STATIC" Margin="15,20,0,0">
+            </Button>
+        </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button
+                StyleClass="button1" Text="HOVER"  Margin="15,20,0,0">
+                </Button>
+                <Button
+                StyleClass="button2" Text="HOVER"  Margin="15,20,0,0">
+                </Button>
+               
+                <Button
+                StyleClass="button3" Text="HOVER"  Margin="15,20,0,0">
+                </Button>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button
+                StyleClass="button1" Text="PRESSED"  Margin="15,20,0,0">
+                </Button>
+                <Button
+                StyleClass="button2" Text="PRESSED"  Margin="15,20,0,0">
+                </Button>
+                <Button
+                StyleClass="button3" Text="PRESSED"  Margin="15,20,0,0">
+                </Button>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <StackLayout Orientation="Vertical">
+                <Switch  OnColor="Red"  ThumbColor="White" />
+                <Switch x:Name="sw1" OnColor="Red" IsToggled="True" Toggled="sw1_Toggled"  ThumbColor="White" />
+                    <Label x:Name="labelswitch1" StyleClass="label" Text="on" TextColor="Black"   Margin="10,0,0,0"></Label >
+                <Switch  x:Name="sw2" OnColor="White" IsToggled="True" Toggled="sw2_Toggled" ThumbColor="Red" />
+                    <Label x:Name="labelswitch2" Text="✓"  StyleClass="label" TextColor="Black"  Margin="10,0,0,0"></Label>
+                   
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Switch  OnColor="Black"  ThumbColor="Red" />
+                    <Switch  x:Name="sw3" OnColor="Black" IsToggled="False" Toggled="sw3_Toggled"  ThumbColor="Red" />
+                    <Label x:Name="labelswitch3" Text="off"   StyleClass="label" TextColor="Black"  Margin="15,0,0,0"></Label>
+                    <Switch x:Name="sw4" OnColor="Red" IsToggled="False" Toggled="sw4_Toggled"  ThumbColor="Black" />
+                    <Label  x:Name="labelswitch4" Text="☓"   StyleClass="label"  TextColor="Black"  Margin="15,0,0,0"></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <StackLayout Orientation="Vertical">
+                    <Slider IsEnabled="False" x:Name="sl1"  MinimumTrackColor="Green" Minimum="0" Maximum="60" Value="5" ThumbColor="White" Margin="10,7,100,10" WidthRequest="200" />
+                    <Slider IsEnabled="False" x:Name="sl2" MinimumTrackColor="Green"  Minimum="0" Maximum="60" Value="5"  ThumbColor="SeaGreen" Margin="10,7,100,10" WidthRequest="200"/>
+                    <Slider IsEnabled="False" x:Name="sl3" MinimumTrackColor="Green"  Minimum="0" Maximum="100" Value="60" ThumbColor="SeaGreen" Margin="10,7,100,10" WidthRequest="200" />
+                    <Slider IsEnabled="False" x:Name="sl4" MinimumTrackColor="Green" Minimum="0" Maximum="100" Value="5" HeightRequest="20" ThumbColor="SeaGreen" Margin="10,7,100,10"  WidthRequest="200"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <RadioButton CheckedChanged="rad1_CheckedChanged"  x:Name="rad1"> </RadioButton>
+                    <RadioButton CheckedChanged="rad2_CheckedChanged"  x:Name="rad2"></RadioButton>
+                    <CheckBox CheckedChanged="check1_CheckedChanged" x:Name="check1"></CheckBox>
+                    <CheckBox CheckedChanged="check2_CheckedChanged" x:Name="check2"></CheckBox>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical">
+            <Picker Title="DROPDOWN" x:Name="picker" Margin="0,0,0,0" SelectedIndex="0" SelectedIndexChanged="Picker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Select One</x:String>
+                    <x:String>Select Two</x:String>
+                    <x:String>Select Three</x:String>
+                    <x:String>Select Four</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    
+        </StackLayout>
+    </ContentPage>
+    
+
+    <ContentPage x:Name="Print">
+
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="login" HorizontalOptions = "StartAndExpand" Margin="60,100,150,10" StyleClass="print" />
+            <Label x:Name="password" HorizontalOptions = "StartAndExpand" Margin="60,20,150,20"  StyleClass="print"/>
+            <Label x:Name="pickedrop" HorizontalOptions="StartAndExpand" Margin="60,50,120,20" StyleClass="print" />
+        </StackLayout>
+
+    </ContentPage>
+   
+
+</CarouselPage>

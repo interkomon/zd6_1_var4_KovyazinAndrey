@@ -1,0 +1,77 @@
+﻿.contentpage {
+    background-color: #2F2F2F;
+    
+}
+.carouselpage {
+    background-color: azure;
+}
+
+
+.welclabel {
+    font-style: bold;
+    color: white;
+}
+
+.logpass {
+    color: black;
+    background-color: blanchedalmond;
+    font-style: bold;
+    font-family: Arial;
+}
+
+button {
+    background-color: red;
+}
+
+.checkbox {
+    color: white;
+}
+
+label {
+    font-size: small;
+    color: white;
+}
+
+.labelIforgot {
+    text-decoration: underline;
+    color: white;
+}
+
+.labeltext {
+    font-size: small;
+    color: black;
+}
+
+.eurusd {
+    font-size: large;
+    color: black;
+    text-decoration: underline;
+}
+
+.button1 {
+    border-radius: 100;
+    background: #008000;
+    color: white;
+    width: 100;
+}
+
+.button2 {
+    border-radius: 100;
+    color: gray;
+    background: #FFF0F5;
+    width: 100;
+}
+
+.button3 {
+    border-radius: 100;
+    color: gray;
+    background:white;
+    border-color: black;
+    border-width: 1;
+    width: 100;
+}
+
+.print {
+    color: black;
+    font-size:small;
+}
